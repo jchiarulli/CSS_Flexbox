@@ -1,0 +1,53 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+/* three starts to move off the page when the 
+screen size is made smaller, i.e., need to 
+horizontally scroll to see it */
+/* This is because we specified a min-width of 
+200px, so the items can no longer shrink any 
+further */
+/* To fix this we can use flex wrap, so once an 
+item reaches it's min-width it will go to the 
+next line */
+/* Now because of the the flex-grow: 1 in box
+three will grow to all of the available space */
+/* wrap reverse moves three to the top and one 
+and two to the bottom */
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+}
+
+.box {
+  height: 100px;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three {
+  background: green;
+}

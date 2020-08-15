@@ -1,0 +1,44 @@
+/* flex-shrink is basically the opposite of 
+flex-grow */
+/* By default the flex items all shrink at the 
+same rate */
+
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+}
+
+.box {
+  height: 100px;
+  width: 320px;
+}
+
+.one {
+  background: red;
+  flex-shrink: 1;
+}
+
+.two {
+  background: blue;
+  flex-shrink: 2;
+}
+
+.three {
+  background: green;
+  flex-shrink: 6;
+}

@@ -1,0 +1,54 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 2 Axes - Main Axis & Cross Axis */
+/* flex-flow: row -> main axis is horizontal &
+cross axis is vertical */
+/* flex-flow: column -> cross axis is horizontal &
+main axis is vertical */
+/* The elements follow the main axis */
+/* align-items works along the cross axis */
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  /* flex-flow: row; */
+  flex-flow: column;
+  height: 600px;
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  /* height: 100px; */
+  width: 100px;
+  flex: 0 0 100px;
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three {
+  background: green;
+}

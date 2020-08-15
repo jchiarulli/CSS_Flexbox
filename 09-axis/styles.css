@@ -1,0 +1,57 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* when specifying flex-flow: column, the flex basis
+of 100px now refers to the height of each flex item
+and not the width and since the flex items are
+block level elements they take up the full width
+of the page */
+
+/* 2 Axes - Main Axis & Cross Axis */
+/* flex-flow: row -> main axis is horizontal &
+cross axis is vertical */
+/* flex-flow: column -> cross axis is horizontal &
+main axis is vertical */
+/* The elements follow the main axis */
+/* justify-content works along the main axis */
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  /* flex-flow: row-reverse; */
+  /* flex-flow: row; */
+  /* flex-flow: column-reverse; */
+  flex-flow: column;
+  justify-content: start;
+  height: 800px;
+}
+
+.box {
+  height: 100px;
+  flex: 0 0 100px;
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three {
+  background: green;
+}

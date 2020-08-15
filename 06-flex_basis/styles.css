@@ -1,0 +1,58 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* flex-basis: 200px means each child element
+starts at 200px and the flex-wrap works the same
+way as before */
+/* Since they all start with a different flex-basis,
+i.e., width, they're all going to end at a different
+width when the page size increases or decreases */
+/* items with a flex-basis will just shrink when
+the page width drops below their given flex-basis size
+as opposed to going off the page */
+/* the flex-basis, flex-grow, and flex-shrink can
+all be combined into one shorthand notation */
+/* flex: grow, shrink, basis */
+/* flex: 1 sets the growth to 1, the shrink to 1,
+and the basis to 0 by default */
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 100px;
+  /* flex-basis: 200px; */
+  /* flex-grow: 1; */
+  /* min-width: 500px; */
+  flex: 1 0 200px;
+}
+
+.one {
+  background: red;
+  /* flex-basis: 100px; */
+}
+
+.two {
+  background: blue;
+  /* flex-basis: 200px; */
+}
+
+.three {
+  background: green;
+  /* flex-basis: 300px; */
+}

@@ -1,0 +1,61 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+}
+
+/* flex-grow is like a growth rate */
+
+.box {
+  height: 100px;
+  min-width: 100px;
+}
+
+/* when one is flex-grow: 1 and two and three 
+have no flex-grow values one takes up all of the
+available width in the flex container */
+
+/* We can think of these flex-grow properties as 
+the number of columns they take up in the 
+available width */
+
+/* Sum up the numbers in the flex-grow properties
+then take each value of flex-grow property and 
+divide it by the sum of the flex-grow properties 
+to get the amount of space each child element takes
+up in the parent element */
+
+/* E.g., one -> flex-grow: 2, two -> flex-grow: 3,
+and three -> flex-grow: 1, then 
+sum = 2 + 3 + 1 = 6, so one takes up 2/6 = 1/3,
+two takes up 3/6 = 1/2, and three takes up 1/6 
+of the available width */
+
+.one {
+  background: red;
+  flex-grow: 2;
+}
+
+.two {
+  background: blue;
+  flex-grow: 3;
+}
+
+.three {
+  background: green;
+  flex-grow: 1;
+}
